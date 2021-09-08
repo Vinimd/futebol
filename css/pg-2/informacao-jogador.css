@@ -1,0 +1,81 @@
+.player-information {
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 0.384);
+    background-color: rgba(0, 0, 0, 0.466);
+    animation: showInformation 600ms forwards;
+}
+
+.player-information .thumb {
+    margin: 1rem 0;
+    width: 200px;
+}
+
+.dados-jogador {
+    margin: 0.5rem 1rem;
+    width: 200px;
+    padding: 0.6rem 0.6rem;
+    color: black;
+    font-weight: 500;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.galeria {
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.281);
+    border-radius: 5px;
+}
+
+iframe {
+    width: 500px;
+    height: 500px;
+}
+
+.galeria img {
+    margin-left: 1rem;
+    width: 200px;
+}
+
+.redes-sociais-jogador {
+    background-color: rgba(255, 255, 255, 0.384);
+    display: flex;
+    padding: 0.5rem 0.5rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.redes-sociais-jogador a img {
+    width: 50px;
+    margin-left: 0.5rem;
+}
+
+@keyframes showInformation {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -200px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
